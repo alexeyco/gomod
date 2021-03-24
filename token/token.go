@@ -9,12 +9,12 @@ const (
 	Comment // //
 
 	literalBegin
-	String // "value"
-	Float  // 1.23
+	Float // 1.23
 	literalEnd
 
 	operatorBegin
 	Implication      // =>
+	Comma            // ,
 	LeftBracket      // [
 	LeftParenthesis  // (
 	RightBracket     // ]
@@ -39,6 +39,7 @@ var tokens = [...]string{
 	Float: "float",
 
 	Implication:      "=>",
+	Comma:            ",",
 	LeftBracket:      "[",
 	LeftParenthesis:  "(",
 	RightBracket:     "]",
